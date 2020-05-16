@@ -84,17 +84,19 @@
                     <div class="social-icons-vertical">
                         <ul class="uk-iconnav uk-iconnav-vertical">
                             <li class="uk-animation-toggle"><a href="https://www.facebook.com/GracelinJonesArtistry/"
-                                    uk-icon="icon: facebook" class="uk-animation-shake" style="color: white;"></a>
+                                    target="_blank" uk-icon="icon: facebook" class="uk-animation-shake"
+                                    style="color: white;"></a>
                             </li>
 
-                            <li class="uk-animation-toggle"><a href="https://youtu.be/IPDoP2kNXkI"
+                            <li class="uk-animation-toggle"><a href="https://youtu.be/IPDoP2kNXkI" target="_blank"
                                     uk-icon="icon: youtube" class="uk-animation-shake" style="color: white;"></a>
 
                             </li>
                             <!-- <li class="uk-animation-toggle"><a href="#" uk-icon="icon: google-plus" style="color: white;"
                                 class="uk-animation-shake"></a></li> -->
                             <li class="uk-animation-toggle"><a href="https://www.instagram.com/gracelin_jones_artistry/"
-                                    uk-icon="icon: instagram" style="color: white" class="uk-animation-shake"></a></li>
+                                    target="_blank" uk-icon="icon: instagram" style="color: white"
+                                    class="uk-animation-shake"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -105,8 +107,25 @@
     </div>
 
     <!-- Menu -->
-    <br><br>
-    <center><a href="#offcanvas-slide" class="uk-button uk-button-default" style="color: white;" uk-toggle>Menu</a>
+
+    <div
+        uk-sticky="sel-target: .uk-navbar-container;show-on-up: true; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+        <nav class="uk-navbar-container" uk-navbar="dropbar: true;"
+            style="position: relative; z-index: 980; background-color: #262626; font-family: Ubuntu;">
+            <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav">
+                    <li><a href="#homesection" uk-scroll>Home</a></li>
+                    <li><a href="#aboutmesection" uk-scroll>About Me</a></li>
+                    <li><a href="#worksection" uk-scroll>Works</a></li>
+                    <li><a href="#contactussection" uk-scroll>Contact Us</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+
+    <!--
+<center><a href="#offcanvas-slide" class="uk-button uk-button-default" style="color: white;" uk-toggle>Menu</a>
     </center>
     <div id="offcanvas-slide" uk-offcanvas>
         <div class="uk-offcanvas-bar">
@@ -119,6 +138,8 @@
 
         </div>
     </div>
+    -->
+
     <!-- About section -->
     <div uk-scrollspy="target: > div; cls: uk-animation-slide-left-small; delay: 500" class="uk-padding-large"
         id="aboutmesection">
@@ -142,82 +163,24 @@
                             <div>
                             </div>
                         </div>
-
-
-                        <!--<h2>Contact Details</h2>
-                        <p>
-                            <span>Gracelin</span><br />
-                            <span>1600 Amphitheatre Parkway<br />
-                                Mountain View, CA 94043 US
-                            </span><br />
-                            <span>(123)456-7890</span><br />
-                            <span>anyone@website.com</span>
-                        </p> -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Work section -->
-    <div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500" id="worksection">
-        <div uk-scrollspy-class="uk-animation-slide-bottom uk-padding-small">
-            <center>
-                <h3 class="uk-card-title" style="color: #924444;">Works</h3>
-            </center>
-            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
-
-
-
-                <ul id="example-1" class="uk-slider-items uk-grid uk-grid-match"
-                    uk-height-viewport="offset-top: true; offset-bottom: 10">
-                    <li class="uk-width-3-4" v-for="item in items" :key="item">
-
-                        <div class="uk-cover-container">
-                            <img v-bind:src="'images/' + item + '.jpg'" alt="" uk-cover>
-                        </div>
-                    </li>
-
-                    <!-- <li class="uk-width-3-4">
-                    <div class="uk-cover-container">
-                        <img src="images/6.jpg" alt="" uk-cover>
-                    </div>
-                </li>
-                <li class="uk-width-3-4">
-                    <div class="uk-cover-container">
-                        <img src="images/7.jpg" alt="" uk-cover>
-                    </div>
-                </li>
-                <li class="uk-width-3-4">
-                    <div class="uk-cover-container">
-                        <img src="images/8.jpg" alt="" uk-cover>
-                    </div>
-                </li>
-                <li class="uk-width-3-4">
-                    <div class="uk-cover-container">
-                        <img src="images/9.jpg" alt="" uk-cover>
-                    </div>
-                </li>
-                <li class="uk-width-3-4">
-                    <div class="uk-cover-container">
-                        <img src="images/10.jpg" alt="" uk-cover>
-                    </div>
-                </li>
-                <li class="uk-width-3-4">
-                    <div class="uk-cover-container">
-                        <img src="images/11.jpg" alt="" uk-cover>
-                    </div>
-                </li> -->
-                </ul>
-
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
-                    uk-slider-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
-                    uk-slider-item="next"></a>
-
+    <div class="uk-card uk-grid-collapse uk-margin" id="worksection" uk-grid>
+        <div class="uk-card-body">
+            <h3 style="color: #924444;">Works</h3>
+            <div id="example-1" class="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center"
+                uk-grid="masonry: true">
+                <div class="uk-cover-container" v-for="item in items" :key="item">
+                    <img v-bind:src="'images/' + item + '.jpg'" alt="" uk-img>
+                </div>
             </div>
-
         </div>
     </div>
+
 
     <!-- Contact Us-->
     <div uk-scrollspy="target: > div; cls: uk-animation-slide-left-small; delay: 500" class="uk-padding-large"
@@ -255,11 +218,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
     <script>
         var example1 = new Vue({
             el: '#example-1',
