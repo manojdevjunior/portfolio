@@ -66,37 +66,56 @@
             .social-icons-vertical .uk-iconnav-vertical li {
                 padding: 10px;
                 margin: 10px;
-            }
+            } 
+        }
+
+        .social-icon-background {
+            border-width: medium;
+            border-radius: 90px;
+            background-color: #262626;
+            width: 30px;
+            height: 30px;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
         }
     </style>
 </head>
 
 <body>
 
-    <div id="homesection" class="uk-background" style="background-color: #924444;">
+    <div id="homesection" class="uk-background-cover" style="background-image: url('gback1.jpg');">
         <div class="logo-container">
             <div class="logo uk-animation-scale-up uk-transform-origin-top-center">
-                <img src="logo.png" alt="">
+                <img src="logo.png" alt="" width="150" height="150" style="padding: 30px; margin-top: 80px;">
             </div>
 
             <div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
                 <div uk-scrollspy-class="uk-animation-slide-bottom-medium">
                     <div class="social-icons-vertical">
                         <ul class="uk-iconnav uk-iconnav-vertical">
-                            <li class="uk-animation-toggle"><a href="https://www.facebook.com/GracelinJonesArtistry/"
-                                    target="_blank" uk-icon="icon: facebook" class="uk-animation-shake"
-                                    style="color: white;"></a>
+                            <li class="uk-animation-toggle">
+                                <div class="social-icon-background">
+                                    <a href="https://www.facebook.com/GracelinJonesArtistry/" target="_blank"
+                                        uk-icon="icon: facebook" class="uk-animation-shake" style="color: white;"></a>
+                                </div>
                             </li>
 
-                            <li class="uk-animation-toggle"><a href="https://youtu.be/IPDoP2kNXkI" target="_blank"
-                                    uk-icon="icon: youtube" class="uk-animation-shake" style="color: white;"></a>
+                            <li class="uk-animation-toggle">
+                                <div class="social-icon-background">
+                                    <a href="https://youtu.be/IPDoP2kNXkI" target="_blank" uk-icon="icon: youtube"
+                                        class="uk-animation-shake" style="color: white;"></a>
+                                </div>
 
                             </li>
                             <!-- <li class="uk-animation-toggle"><a href="#" uk-icon="icon: google-plus" style="color: white;"
                                 class="uk-animation-shake"></a></li> -->
-                            <li class="uk-animation-toggle"><a href="https://www.instagram.com/gracelin_jones_artistry/"
-                                    target="_blank" uk-icon="icon: instagram" style="color: white"
-                                    class="uk-animation-shake"></a></li>
+                            <li class="uk-animation-toggle">
+                                <div class="social-icon-background">
+                                    <a href="https://www.instagram.com/gracelin_jones_artistry/" target="_blank"
+                                        uk-icon="icon: instagram" style="color: white" class="uk-animation-shake"></a>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
