@@ -176,7 +176,8 @@
     <div uk-scrollspy="cls:uk-animation-fade">
         <div class="uk-card uk-grid-collapse uk-margin" id="aboutmesection" uk-grid>
             <div class="uk-panel uk-card-body">
-                <img class="uk-align-left uk-margin-remove-adjacent " src="profile.jpg" width="400" alt="Example image">
+                <img class="uk-align-left uk-animation-slide-right-medium uk-margin-remove-adjacent " src="profile.jpg"
+                    width="400" alt="Example image">
                 <div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500"
                     style="font-family: Ubuntu; color: white; font-weight: 300;font-style: normal; font-size: 15px; letter-spacing: .24em; line-height: 1.8em; text-transform: none;">
                     <div uk-scrollspy-class="uk-animation-slide-right-medium">
@@ -186,22 +187,26 @@
                                 <b>Creative Director | Gracelin Jones Artistry</b>
                             </div>
                         </div>
-                        <p>My name is Gracelin Daniel Jones and I'm a passionate artist who loves creating art, right
+                        <p style="text-align: justify;">My name is Gracelin Daniel Jones and I'm a passionate artist who
+                            loves creating art, right
                             from the time I was 6. With strong interests in the field of Art, what started out as
                             scribbles and pencil sketches of Anime characters during long school lectures, transformed
                             into more focused work with meticulous attention to detail.</p>
-                        <p>For many years I had kept this low key due to my Day job taking higher preference - you know
+                        <p style="text-align: justify;">For many years I had kept this low key due to my Day job taking
+                            higher preference - you know
                             family expectations to get a degree and have a successful careeer, however, my passion for
                             art only started burning more brighter as I found happiness and satisfaction in it. It
                             became my therapy and my 'escape' from work pressure and stress. I've ever since been
                             kindled to start creating and inspiring others more in this therapeutic field and in 2018 I
                             officially started Gracelin Jones Artistry.</p>
-                        <p>Of all the art forms that I've had the chance to explore, I've developed interests towards
+                        <p style="text-align: justify;">Of all the art forms that I've had the chance to explore, I've
+                            developed interests towards
                             pencil sketching, acrylic and watercolor paintings, wall murals and especially CALLIGRAPHY!
                             I was introduced to calligraphy in 2017 by a friend and what can I say? It was love at first
                             sight! I slowly started my self-learning journey from there and over the years I started to
                             develop this passion more and more. My journey so far? - It has been overwhelming!!!</p>
-                        <p>I truly believe we all were once creative artists as children with colourful imaginations,
+                        <p style="text-align: justify;">I truly believe we all were once creative artists as children
+                            with colourful imaginations,
                             who didnt really mind colouring outside the lines. One of the best parts about this journey
                             has been going around teaching and inspiring people and rekindling this passion from within
                             them as well. Through that, I also understood how patience, inspiration and motivation as a
@@ -210,7 +215,8 @@
                             around Chennai for 100+ students and I'm working on scaling this up in the coming days. The
                             World is a vast place and for those who I couldnt reach, I also started my YouTube channel
                             with innovative tutorials and product/brand reviews to help them out.</p>
-                        <p>That being said, I myself am in a continuous process of learning and developing my skills. I
+                        <p style="text-align: justify;">That being said, I myself am in a continuous process of learning
+                            and developing my skills. I
                             believe that every artist should keep evolving and thats the only way to grow. As I continue
                             to grow in this journey, my purpose remains - to inspire people to become 'creators'.
                             Welcome to my World.</p>
@@ -224,22 +230,63 @@
     </div>
 
 
-
-    <!-- Work section -->
-
-    <div uk-scrollspy="cls:uk-animation-fade">
-        <div class="uk-card uk-grid-collapse uk-margin" id="worksection" uk-grid>
+    <div uk-scrollspy="cls:uk-animation-fade" id="worksection" uk-grid="masonry: true">
+        <div class="uk-card  uk-grid-collapse uk-margin" uk-grid>
             <div class="uk-card-body">
                 <h3 style="color: #924444;">Works</h3>
-                <div id="example-1" class="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center"
-                    uk-grid="masonry: true">
-                    <div class="uk-cover-container" v-for="item in items" :key="item">
-                        <img v-bind:src="'images/' + item + '.jpg'" alt="" uk-img>
+                <div class="" uk-grid uk-lightbox="animation: slide">
+                    <div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true">
+                        <div>
+                            <a class="uk-inline uk-animation-slide-bottom-medium" href="images/1.jpg">
+                                <img src="images/1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="uk-inline uk-animation-slide-bottom-medium" href="images/2.jpg">
+                                <img src="images/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="uk-inline uk-animation-slide-bottom-medium" href="images/3.jpg">
+                                <img src="images/3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="uk-inline uk-animation-slide-bottom-medium" href="images/4.jpg">
+                                <img src="images/4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="uk-inline uk-animation-slide-bottom-medium" href="images/5.jpg">
+                                <img src="images/5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="uk-inline uk-animation-slide-bottom-medium" href="images/6.jpg">
+                                <img src="images/6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="uk-inline uk-animation-slide-bottom-medium" href="images/7.jpg">
+                                <img src="images/7.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="uk-inline uk-animation-slide-bottom-medium" href="images/8.jpg">
+                                <img src="images/8.jpg" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
+
+    </div>
+
+    <!-- Work section -->
+
 
 
     <!-- Contact Us-->
@@ -248,28 +295,41 @@
         <div class="uk-card uk-grid-collapse uk-margin" id="worksection123" uk-grid>
             <div class="uk-card-body">
                 <h3 style="color: #924444;">Contact Us</h3>
-                <p>You can reach out to us through our email or through one of the social media site links provided
+                <p style="text-align: justify;">You can reach out to us through our email or through one of the social
+                    media site links provided
                     below. Kindly give us 2 to 3 working days to respond to you. Thank you!</p>
-                <span uk-icon="mail" class="uk-padding-small uk-padding-remove-left"></span>
+                <span uk-icon="mail" class="uk-padding-remove-left"></span>
                 gracelinjonesartistry@gmail.com <br>
-                <span uk-icon="instagram" class="uk-padding-small uk-padding-remove-left"></span>
-                https://www.instagram.com/gracelin_jones_artistry<br>
-                <span uk-icon="facebook" class="uk-padding-small uk-padding-remove-left"></span>
-                https://www.facebook.com/GracelinJonesArtistry</p>
+                <br>
+                <div class="social-icons-vertical">
+                    <ul class="uk-iconnav uk-iconnav">
+                        <li class="uk-animation-toggle">
+                            <a href="https://www.facebook.com/GracelinJonesArtistry/" target="_blank"
+                                uk-icon="icon: facebook"
+                                class="uk-animation-scale-up uk-padding-small uk-padding-remove-left"
+                                style="color: white;"></a>
+                        </li>
+
+                        <li class="uk-animation-toggle">
+                            <a href="https://youtu.be/IPDoP2kNXkI" target="_blank" uk-icon="icon: youtube"
+                                class="uk-animation-scale-up uk-padding-small uk-padding-remove-left"
+                                style="color: white;"></a>
+                        </li>
+                        <!-- <li class="uk-animation-toggle"><a href="#" uk-icon="icon: google-plus" style="color: white;"
+                            class="uk-animation-shake"></a></li> -->
+                        <li class="uk-animation-toggle">
+                            <a href="https://www.instagram.com/gracelin_jones_artistry/" target="_blank"
+                                uk-icon="icon: instagram" style="color: white;"
+                                class="uk-animation-scale-up uk-padding-small uk-padding-remove-left"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
     </div>
 
     <script>
-        var example1 = new Vue({
-            el: '#example-1',
-            data: {
-                items: [
-                    '1', '2', '3', '4', '5', '6', '7', '8'
-                ]
-            }
-        })
 
         //trywritter function 
         //made by vipul mirajkar thevipulm.appspot.com
