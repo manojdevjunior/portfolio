@@ -11,6 +11,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500|Ubuntu:300,700,700i,300i,400"
         rel="stylesheet">
+
+
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit-icons.min.js"></script>
@@ -84,7 +86,16 @@
 
 <body>
 
-    <div id="homesection" class="uk-background-cover" style="background-image: url('gback1.JPG');">
+    <div id="homesection" class="uk-background-cover" style="background-image: url('gback1.jpg'); padding-top: 0;">
+        <center style=" padding-top: 20px; padding-bottom: 14px; background-color: #262626;">
+            <h1>
+                <div style="font-family: Ubuntu; color: #924444; font-weight: 500;font-style: normal; font-size: 18px; letter-spacing: .24em; line-height: 1.8em; text-transform: none;"
+                    class="typewrite" data-period="2000"
+                    data-type='[ "Calligraphy", "Pencil sketching", "Watercolour & Acrylic painting" , "Wall Murals", "Workshops" ]'>
+                    <span class="wrap"></span>
+                </div>
+            </h1>
+        </center>
         <div class="logo-container">
             <div class="logo uk-animation-scale-up uk-transform-origin-top-center">
                 <img src="logo.png" alt="" width="150" height="150" style="padding: 30px; margin-top: 80px;">
@@ -97,8 +108,7 @@
                             <li class="uk-animation-toggle">
                                 <div class="social-icon-background">
                                     <a href="https://www.facebook.com/GracelinJonesArtistry/" target="_blank"
-                                        uk-icon="icon: facebook" class="uk-animation-shake"
-                                        style="            color: #262626;"></a>
+                                        uk-icon="icon: facebook" class="uk-animation-shake" style="color: #262626;"></a>
                                 </div>
                             </li>
 
@@ -162,41 +172,70 @@
     -->
 
     <!-- About section -->
-    <div uk-scrollspy="target: > div; cls: uk-animation-slide-left-small; delay: 500" class="uk-padding-large"
-        id="aboutmesection">
-        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-            <div class="uk-cover-container">
-                <img src="profile.jpg" alt="" uk-cover>
-                <canvas width="100" height="600"></canvas>
-            </div>
-            <div>
-                <div class="uk-card-body"
+
+    <div uk-scrollspy="cls:uk-animation-fade">
+        <div class="uk-card uk-grid-collapse uk-margin" id="aboutmesection" uk-grid>
+            <div class="uk-panel uk-card-body">
+                <img class="uk-align-left uk-margin-remove-adjacent " src="profile.jpg" width="400" alt="Example image">
+                <div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500"
                     style="font-family: Ubuntu; color: white; font-weight: 300;font-style: normal; font-size: 15px; letter-spacing: .24em; line-height: 1.8em; text-transform: none;">
-                    <div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
-                        <div uk-scrollspy-class="uk-animation-slide-right-medium">
-                            <h3 class="uk-card-title" style="color: #924444;">About Me</h3>
-                            <p>Gracelin Jones Artistry is just a new venture by me (Gracelin Daniel
-                                Jones), an average IT girl who's passionate about art and love making time lapse process
-                                videos!!! I love teaching and sharing what I do and would love for you to be a part of
-                                my
-                                journey!!!
-                                Subscribe today and your love would mean a lot!</p>
-                            <div>
+                    <div uk-scrollspy-class="uk-animation-slide-right-medium">
+                        <h3 class="uk-card-title" style="color: #924444;">About Me</h3>
+                        <div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
+                            <div uk-scrollspy-class="uk-animation-slide-right-medium">
+                                <b>Creative Director | Gracelin Jones Artistry</b>
                             </div>
+                        </div>
+                        <p>My name is Gracelin Daniel Jones and I'm a passionate artist who loves creating art, right
+                            from the time I was 6. With strong interests in the field of Art, what started out as
+                            scribbles and pencil sketches of Anime characters during long school lectures, transformed
+                            into more focused work with meticulous attention to detail.</p>
+                        <p>For many years I had kept this low key due to my Day job taking higher preference - you know
+                            family expectations to get a degree and have a successful careeer, however, my passion for
+                            art only started burning more brighter as I found happiness and satisfaction in it. It
+                            became my therapy and my 'escape' from work pressure and stress. I've ever since been
+                            kindled to start creating and inspiring others more in this therapeutic field and in 2018 I
+                            officially started Gracelin Jones Artistry.</p>
+                        <p>Of all the art forms that I've had the chance to explore, I've developed interests towards
+                            pencil sketching, acrylic and watercolor paintings, wall murals and especially CALLIGRAPHY!
+                            I was introduced to calligraphy in 2017 by a friend and what can I say? It was love at first
+                            sight! I slowly started my self-learning journey from there and over the years I started to
+                            develop this passion more and more. My journey so far? - It has been overwhelming!!!</p>
+                        <p>I truly believe we all were once creative artists as children with colourful imaginations,
+                            who didnt really mind colouring outside the lines. One of the best parts about this journey
+                            has been going around teaching and inspiring people and rekindling this passion from within
+                            them as well. Through that, I also understood how patience, inspiration and motivation as a
+                            trainer/teacher has always been a part of my inner being. Apart from taking up commissioned
+                            projects, I've also conducted both online and in-person Brush Lettering Workshops in and
+                            around Chennai for 100+ students and I'm working on scaling this up in the coming days. The
+                            World is a vast place and for those who I couldnt reach, I also started my YouTube channel
+                            with innovative tutorials and product/brand reviews to help them out.</p>
+                        <p>That being said, I myself am in a continuous process of learning and developing my skills. I
+                            believe that every artist should keep evolving and thats the only way to grow. As I continue
+                            to grow in this journey, my purpose remains - to inspire people to become 'creators'.
+                            Welcome to my World.</p>
+                        <div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
+
+
+
     <!-- Work section -->
-    <div class="uk-card uk-grid-collapse uk-margin" id="worksection" uk-grid>
-        <div class="uk-card-body">
-            <h3 style="color: #924444;">Works</h3>
-            <div id="example-1" class="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center"
-                uk-grid="masonry: true">
-                <div class="uk-cover-container" v-for="item in items" :key="item">
-                    <img v-bind:src="'images/' + item + '.jpg'" alt="" uk-img>
+
+    <div uk-scrollspy="cls:uk-animation-fade">
+        <div class="uk-card uk-grid-collapse uk-margin" id="worksection" uk-grid>
+            <div class="uk-card-body">
+                <h3 style="color: #924444;">Works</h3>
+                <div id="example-1" class="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center"
+                    uk-grid="masonry: true">
+                    <div class="uk-cover-container" v-for="item in items" :key="item">
+                        <img v-bind:src="'images/' + item + '.jpg'" alt="" uk-img>
+                    </div>
                 </div>
             </div>
         </div>
@@ -204,41 +243,24 @@
 
 
     <!-- Contact Us-->
-    <div uk-scrollspy="target: > div; cls: uk-animation-slide-left-small; delay: 500" class="uk-padding-large"
-        id="contactussection">
-        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-            <div>
-                <div class="uk-card-body"
-                    style="font-family: Ubuntu; color: white; font-weight: 300;font-style: normal; font-size: 15px; letter-spacing: .24em; line-height: 1.8em; text-transform: none;">
-                    <div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
-                        <div uk-scrollspy-class="uk-animation-slide-right-medium">
-                            <h3 style="color: #924444;">Contact Us</h3>
-                            <h4 style="color: white;">Gracelin Jones Artistry</h4>
-                            <p>Gracelin Jones Artistry is just a new venture by me (Gracelin Daniel
-                                Jones), an average IT girl who's passionate about art and love making time lapse process
-                                videos!!! I love teaching and sharing what I do and would love for you to be a part of
-                                my
-                                journey!!!
-                                Subscribe today and your love would mean a lot!</p>
-                            <div>
-                            </div>
-                        </div>
 
-
-                        <!--<h2>Contact Details</h2>
-                        <p>
-                            <span>Gracelin</span><br />
-                            <span>1600 Amphitheatre Parkway<br />
-                                Mountain View, CA 94043 US
-                            </span><br />
-                            <span>(123)456-7890</span><br />
-                            <span>anyone@website.com</span>
-                        </p> -->
-                    </div>
-                </div>
+    <div uk-scrollspy="cls: uk-animation-slide-right;" id="contactussection">
+        <div class="uk-card uk-grid-collapse uk-margin" id="worksection123" uk-grid>
+            <div class="uk-card-body">
+                <h3 style="color: #924444;">Contact Us</h3>
+                <p>You can reach out to us through our email or through one of the social media site links provided
+                    below. Kindly give us 2 to 3 working days to respond to you. Thank you!</p>
+                <span uk-icon="mail" class="uk-padding-small uk-padding-remove-left"></span>
+                gracelinjonesartistry@gmail.com <br>
+                <span uk-icon="instagram" class="uk-padding-small uk-padding-remove-left"></span>
+                https://www.instagram.com/gracelin_jones_artistry<br>
+                <span uk-icon="facebook" class="uk-padding-small uk-padding-remove-left"></span>
+                https://www.facebook.com/GracelinJonesArtistry</p>
             </div>
         </div>
+
     </div>
+
     <script>
         var example1 = new Vue({
             el: '#example-1',
@@ -248,6 +270,65 @@
                 ]
             }
         })
+
+        //trywritter function 
+        //made by vipul mirajkar thevipulm.appspot.com
+        var TxtType = function (el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtType.prototype.tick = function () {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+            var that = this;
+            var delta = 200 - Math.random() * 100;
+
+            if (this.isDeleting) { delta /= 2; }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function () {
+                that.tick();
+            }, delta);
+        };
+
+        window.onload = function () {
+            var elements = document.getElementsByClassName('typewrite');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-type');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtType(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff; }";
+            document.body.appendChild(css);
+        };
     </script>
 </body>
 
