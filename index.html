@@ -173,7 +173,7 @@
 
     <!-- About section -->
 
-    <div uk-scrollspy="cls:uk-animation-fade">
+    <div uk-scrollspy="cls:uk-animation-fade" style="padding: 30px;">
         <div class="uk-card uk-grid-collapse uk-margin" id="aboutmesection" uk-grid>
             <div class="uk-panel uk-card-body">
                 <img class="uk-align-left uk-animation-slide-right-medium uk-margin-remove-adjacent " src="profile.jpg"
@@ -181,7 +181,7 @@
                 <div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500"
                     style="font-family: Ubuntu; color: white; font-weight: 300;font-style: normal; font-size: 15px; letter-spacing: .24em; line-height: 1.8em; text-transform: none;">
                     <div uk-scrollspy-class="uk-animation-slide-right-medium">
-                        <h3 class="uk-card-title" style="color: #924444;">About Me</h3>
+                        <h3 class="uk-card-title" style="color: #924444; font-weight: 600;" >About Me</h3>
                         <div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
                             <div uk-scrollspy-class="uk-animation-slide-right-medium">
                                 <b>Creative Director | Gracelin Jones Artistry</b>
@@ -199,7 +199,21 @@
                             became my therapy and my 'escape' from work pressure and stress. I've ever since been
                             kindled to start creating and inspiring others more in this therapeutic field and in 2018 I
                             officially started Gracelin Jones Artistry.</p>
-                        <p style="text-align: justify;">Of all the art forms that I've had the chance to explore, I've
+                        <a style="color: #924444;" href="#modal-center" uk-toggle>Read More...</a>
+
+                        <div id="modal-center" class="uk-flex-top" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical" style="background-color: #f0d0c0; color: #262626;">
+                        
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                        
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        
+                            </div>
+                        </div>
+
+
+
+                      <!--   <p style="text-align: justify;">Of all the art forms that I've had the chance to explore, I've
                             developed interests towards
                             pencil sketching, acrylic and watercolor paintings, wall murals and especially CALLIGRAPHY!
                             I was introduced to calligraphy in 2017 by a friend and what can I say? It was love at first
@@ -221,7 +235,7 @@
                             to grow in this journey, my purpose remains - to inspire people to become 'creators'.
                             Welcome to my World.</p>
                         <div>
-                        </div>
+                       -->  </div>
                     </div>
                 </div>
             </div>
@@ -230,10 +244,10 @@
     </div>
 
 
-    <div uk-scrollspy="cls:uk-animation-fade" id="worksection" uk-grid="masonry: true">
+    <div uk-scrollspy="cls:uk-animation-fade" id="worksection" uk-grid="masonry: true"  style="padding: 30px;">
         <div class="uk-card  uk-grid-collapse uk-margin" uk-grid>
             <div class="uk-card-body">
-                <h3 style="color: #924444;">Works</h3>
+                <h3 class="uk-card-title" style="color: #924444; font-weight: 600; text-align: center;" >Our Works</h3>
                 <div class="" uk-grid uk-lightbox="animation: slide">
                     <div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true">
                         <div>
@@ -291,10 +305,10 @@
 
     <!-- Contact Us-->
 
-    <div uk-scrollspy="cls: uk-animation-slide-right;" id="contactussection">
+    <div uk-scrollspy="cls: uk-animation-slide-right;" id="contactussection"  style="padding: 30px;">
         <div class="uk-card uk-grid-collapse uk-margin" id="worksection123" uk-grid>
-            <div class="uk-card-body">
-                <h3 style="color: #924444;">Contact Us</h3>
+            <div class="uk-card-body" style="text-align: center;">
+                <h3 style="color: #924444; font-weight: 600;">Contact Us</h3>
                 <p style="text-align: justify;">You can reach out to us through our email or through one of the social
                     media site links provided
                     below. Kindly give us 2 to 3 working days to respond to you. Thank you!</p>
@@ -302,22 +316,26 @@
                 gracelinjonesartistry@gmail.com <br>
                 <br>
                 <div class="social-icons-vertical">
-                    <ul class="uk-iconnav uk-iconnav">
-                        <li class="uk-animation-toggle">
+                    <ul style="
+                    text-align: center;
+                    list-style-type: none;
+                    display: inline-flex;
+                ">
+                        <li class="uk-animation-toggle uk-padding-small">
                             <a href="https://www.facebook.com/GracelinJonesArtistry/" target="_blank"
                                 uk-icon="icon: facebook"
                                 class="uk-animation-scale-up uk-padding-small uk-padding-remove-left"
                                 style="color: white;"></a>
                         </li>
 
-                        <li class="uk-animation-toggle">
+                        <li class="uk-animation-toggle uk-padding-small">
                             <a href="https://youtu.be/IPDoP2kNXkI" target="_blank" uk-icon="icon: youtube"
                                 class="uk-animation-scale-up uk-padding-small uk-padding-remove-left"
                                 style="color: white;"></a>
                         </li>
                         <!-- <li class="uk-animation-toggle"><a href="#" uk-icon="icon: google-plus" style="color: white;"
                             class="uk-animation-shake"></a></li> -->
-                        <li class="uk-animation-toggle">
+                        <li class="uk-animation-toggle uk-padding-small">
                             <a href="https://www.instagram.com/gracelin_jones_artistry/" target="_blank"
                                 uk-icon="icon: instagram" style="color: white;"
                                 class="uk-animation-scale-up uk-padding-small uk-padding-remove-left"></a>
