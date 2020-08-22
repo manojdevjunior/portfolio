@@ -24,7 +24,7 @@
         body {
             height: 100%;
             width: 100%;
-            background-color: #262626;
+            background-color: white;
         }
 
         .logo-container {
@@ -53,6 +53,19 @@
         }
 
         @media only screen and (max-width: 900px) {
+
+            #logoBackgroundImage {
+                margin-top: 00px;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+
+            #typewriterText {
+                padding-top: 0;
+                margin-top: 0;
+                margin-bottom: 50px;
+            }
+
             .logo-container {
                 display: grid;
             }
@@ -86,21 +99,18 @@
 
 <body>
 
-    <div id="homesection" class="uk-background-cover" style="background-image: url('gback1.JPG'); padding-top: 0;">
-        <center style=" padding-top: 20px; padding-bottom: 14px; background-color: #262626;">
-            <h1>
-                <div style="font-family: Ubuntu; color: #924444; font-weight: 500;font-style: normal; font-size: 18px; letter-spacing: .24em; line-height: 1.8em; text-transform: none;"
+    <div id="homesection" class="uk-background-cover"
+        style="background-color: #550015;background-image: url('gback1.JPG'); padding-top: 0;">
+        <div class="logo-container">
+            <div class="logo uk-animation-scale-up uk-transform-origin-top-center" id="logoBackgroundImage">
+                <img src="logo.png" alt="" width="150" height="150" style="padding: 30px; margin-top: 80px;">
+                <div id="typewriterText"
+                    style="font-family: Ubuntu; color: white; font-weight: 500;font-style: normal; font-size: 18px; letter-spacing: .24em; line-height: 1.8em; text-transform: none;"
                     class="typewrite" data-period="2000"
                     data-type='[ "Calligraphy", "Pencil sketching", "Watercolour & Acrylic painting" , "Wall Murals", "Workshops" ]'>
                     <span class="wrap"></span>
                 </div>
-            </h1>
-        </center>
-        <div class="logo-container">
-            <div class="logo uk-animation-scale-up uk-transform-origin-top-center">
-                <img src="logo.png" alt="" width="150" height="150" style="padding: 30px; margin-top: 80px;">
             </div>
-
             <div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
                 <div uk-scrollspy-class="uk-animation-slide-bottom-medium">
                     <div class="social-icons-vertical">
@@ -132,8 +142,6 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 
@@ -142,7 +150,7 @@
     <div
         uk-sticky="sel-target: .uk-navbar-container;show-on-up: true; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
         <nav class="uk-navbar-container" uk-navbar="dropbar: true;"
-            style="position: relative; z-index: 980; background-color: #262626; font-family: Ubuntu;">
+            style="position: relative; z-index: 980; color: #262626; font-family: Ubuntu;">
             <div class="uk-navbar-center">
                 <ul class="uk-navbar-nav">
                     <li><a href="#homesection" uk-scroll>Home</a></li>
@@ -179,9 +187,9 @@
                 <img class="uk-align-left uk-animation-slide-right-medium uk-margin-remove-adjacent " src="profile.jpg"
                     width="400" alt="Example image">
                 <div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500"
-                    style="font-family: Ubuntu; color: white; font-weight: 300;font-style: normal; font-size: 15px; letter-spacing: .24em; line-height: 1.8em; text-transform: none;">
+                    style="font-family: Ubuntu; color: #262626; font-weight: 300;font-style: normal; font-size: 15px; letter-spacing: .24em; line-height: 1.8em; text-transform: none;">
                     <div uk-scrollspy-class="uk-animation-slide-right-medium">
-                        <h3 class="uk-card-title" style="color: #924444; font-weight: 600;" >About Me</h3>
+                        <h3 class="uk-card-title" style="color: #924444; font-weight: 600;">About Me</h3>
                         <div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
                             <div uk-scrollspy-class="uk-animation-slide-right-medium">
                                 <b>Creative Director | Gracelin Jones Artistry</b>
@@ -202,18 +210,79 @@
                         <a style="color: #924444;" href="#modal-center" uk-toggle>Read More...</a>
 
                         <div id="modal-center" class="uk-flex-top" uk-modal>
-                            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical" style="background-color: #f0d0c0; color: #262626;">
-                        
-                                <button class="uk-modal-close-default" type="button" uk-close></button>
-                        
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        
+                            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical"
+                                style="background-color: white; color: #262626;">
+                                <button class="uk-modal-close-default" uk-close ></button>
+                                <h3 class="uk-card-title" style="color: #924444; font-weight: 600;">About Me</h3>
+                                <div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
+                                    <div uk-scrollspy-class="uk-animation-slide-right-medium">
+                                        <b>Creative Director | Gracelin Jones Artistry</b>
+                                    </div>
+                                </div>
+                                <p style="text-align: justify;">My name is Gracelin Daniel Jones and I'm a passionate
+                                    artist who
+                                    loves creating art, right
+                                    from the time I was 6. With strong interests in the field of Art, what started out
+                                    as
+                                    scribbles and pencil sketches of Anime characters during long school lectures,
+                                    transformed
+                                    into more focused work with meticulous attention to detail.</p>
+                                <p style="text-align: justify;">For many years I had kept this low key due to my Day job
+                                    taking
+                                    higher preference - you know
+                                    family expectations to get a degree and have a successful careeer, however, my
+                                    passion for
+                                    art only started burning more brighter as I found happiness and satisfaction in it.
+                                    It
+                                    became my therapy and my 'escape' from work pressure and stress. I've ever since
+                                    been
+                                    kindled to start creating and inspiring others more in this therapeutic field and in
+                                    2018 I
+                                    officially started Gracelin Jones Artistry.</p>
+                                <p style="text-align: justify;">Of all the art forms that I've had the chance to
+                                    explore, I've
+                                    developed interests towards
+                                    pencil sketching, acrylic and watercolor paintings, wall murals and especially
+                                    CALLIGRAPHY!
+                                    I was introduced to calligraphy in 2017 by a friend and what can I say? It was love
+                                    at first
+                                    sight! I slowly started my self-learning journey from there and over the years I
+                                    started to
+                                    develop this passion more and more. My journey so far? - It has been overwhelming!!!
+                                </p>
+                                <p style="text-align: justify;">I truly believe we all were once creative artists as
+                                    children
+                                    with colourful imaginations,
+                                    who didnt really mind colouring outside the lines. One of the best parts about this
+                                    journey
+                                    has been going around teaching and inspiring people and rekindling this passion from
+                                    within
+                                    them as well. Through that, I also understood how patience, inspiration and
+                                    motivation as a
+                                    trainer/teacher has always been a part of my inner being. Apart from taking up
+                                    commissioned
+                                    projects, I've also conducted both online and in-person Brush Lettering Workshops in
+                                    and
+                                    around Chennai for 100+ students and I'm working on scaling this up in the coming
+                                    days. The
+                                    World is a vast place and for those who I couldnt reach, I also started my YouTube
+                                    channel
+                                    with innovative tutorials and product/brand reviews to help them out.</p>
+                                <p style="text-align: justify;">That being said, I myself am in a continuous process of
+                                    learning
+                                    and developing my skills. I
+                                    believe that every artist should keep evolving and thats the only way to grow. As I
+                                    continue
+                                    to grow in this journey, my purpose remains - to inspire people to become
+                                    'creators'.
+                                    Welcome to my World.</p>
+
                             </div>
                         </div>
 
 
 
-                      <!--   <p style="text-align: justify;">Of all the art forms that I've had the chance to explore, I've
+                        <!--   <p style="text-align: justify;">Of all the art forms that I've had the chance to explore, I've
                             developed interests towards
                             pencil sketching, acrylic and watercolor paintings, wall murals and especially CALLIGRAPHY!
                             I was introduced to calligraphy in 2017 by a friend and what can I say? It was love at first
@@ -235,19 +304,274 @@
                             to grow in this journey, my purpose remains - to inspire people to become 'creators'.
                             Welcome to my World.</p>
                         <div>
-                       -->  </div>
+                       -->
                     </div>
                 </div>
             </div>
-
         </div>
+
+    </div>
     </div>
 
+    <div uk-filter="target: .js-filter"  style="padding: 50px;">
 
-    <div uk-scrollspy="cls:uk-animation-fade" id="worksection" uk-grid="masonry: true"  style="padding: 30px;">
+        <ul class="uk-subnav uk-subnav-pill">
+            <li class="uk-active" uk-filter-control><a href="#">All</a></li>
+            <li uk-filter-control="[data-color='Wedding_Signages']"><a href="#">Wedding Signages</a></li>
+            <li uk-filter-control="[data-color='Wooden_Board_Calligraphy']"><a href="#">Wooden Board Calligraphy</a></li>
+            <li uk-filter-control="[data-color='workshop']"><a href="#">workshop</a></li>
+            <li uk-filter-control="[data-color='Wall_Painting']"><a href="#">Wall Painting</a></li>
+            <li uk-filter-control="[data-color='Digital_Printed_Frames']"><a href="#">Digital Printed Frames</a></li>
+            <li uk-filter-control="[data-color='Custom_Calligraphy']"><a href="#">Custom Calligraphy</a></li>
+        </ul>
+    
+        <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
+            <li data-color="Wedding_Signages">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Wedding_Signages/1.jpg">
+                        <img src="imagecategory/Wedding_Signages/1.jpg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li data-color="Wedding_Signages">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Wedding_Signages/2.jpg">
+                        <img src="imagecategory/Wedding_Signages/2.jpg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li data-color="Wedding_Signages">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Wedding_Signages/3.jpg">
+                        <img src="imagecategory/Wedding_Signages/3.jpg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li data-color="Wedding_Signages">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Wedding_Signages/4.jpg">
+                        <img src="imagecategory/Wedding_Signages/4.jpg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li data-color="Wedding_Signages">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Wedding_Signages/5.jpg">
+                        <img src="imagecategory/Wedding_Signages/5.jpg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li data-color="Wedding_Signages">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Wedding_Signages/6.jpg">
+                        <img src="imagecategory/Wedding_Signages/6.jpg" alt="">
+                    </a>
+                </div>
+            </li>
+
+            <!-- Wooden_Board_Calligraphy -->
+                <li data-color="Wooden_Board_Calligraphy">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Wooden_Board_Calligraphy/1.jpg">
+                            <img src="imagecategory/Wooden_Board_Calligraphy/1.jpg" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li data-color="Wooden_Board_Calligraphy">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Wooden_Board_Calligraphy/2.jpg">
+                            <img src="imagecategory/Wooden_Board_Calligraphy/2.jpg" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li data-color="Wooden_Board_Calligraphy">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Wooden_Board_Calligraphy/3.jpg">
+                            <img src="imagecategory/Wooden_Board_Calligraphy/3.jpg" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li data-color="Wooden_Board_Calligraphy">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Wooden_Board_Calligraphy/4.jpg">
+                            <img src="imagecategory/Wooden_Board_Calligraphy/4.jpg" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li data-color="Wooden_Board_Calligraphy">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Wooden_Board_Calligraphy/5.jpg">
+                            <img src="imagecategory/Wooden_Board_Calligraphy/5.jpg" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li data-color="Wooden_Board_Calligraphy">
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Wooden_Board_Calligraphy/6.jpg">
+                            <img src="imagecategory/Wooden_Board_Calligraphy/6.jpg" alt="">
+                        </a>
+                    </div>
+                </li>
+
+            <!-- workshop -->
+            <li data-color="workshop">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/workshop/1.jpg">
+                        <img src="imagecategory/workshop/1.jpg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li data-color="workshop">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/workshop/2.jpg">
+                        <img src="imagecategory/workshop/2.jpg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li data-color="workshop">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/workshop/3.jpg">
+                        <img src="imagecategory/workshop/3.jpg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li data-color="workshop">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/workshop/4.jpg">
+                        <img src="imagecategory/workshop/4.jpg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li data-color="workshop">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/workshop/5.jpg">
+                        <img src="imagecategory/workshop/5.jpg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li data-color="workshop">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/workshop/6.jpg">
+                        <img src="imagecategory/workshop/6.jpg" alt="">
+                    </a>
+                </div>
+            </li>
+
+              <!-- Wall painting -->
+              <li data-color="Wall_Painting">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Wall_Painting/1.jpg">
+                        <img src="imagecategory/Wall_Painting/1.jpg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li data-color="Wall_Painting">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Wall_Painting/2.jpg">
+                        <img src="imagecategory/Wall_Painting/2.jpg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li data-color="Wall_Painting">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Wall_Painting/3.jpg">
+                        <img src="imagecategory/Wall_Painting/3.jpg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li data-color="Wall_Painting">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Wall_Painting/4.jpg">
+                        <img src="imagecategory/Wall_Painting/4.jpg" alt="">
+                    </a>
+                </div>
+            </li>
+
+            
+              <!-- Digital Printed Frames -->
+              <li data-color="Digital_Printed_Frames">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Digital_Printed_Frames/1.jpg">
+                        <img src="imagecategory/Digital_Printed_Frames/1.jpg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li data-color="Digital_Printed_Frames">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Digital_Printed_Frames/2.jpg">
+                        <img src="imagecategory/Digital_Printed_Frames/2.jpg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li data-color="Digital_Printed_Frames">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Digital_Printed_Frames/3.jpg">
+                        <img src="imagecategory/Digital_Printed_Frames/3.jpg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li data-color="Digital_Printed_Frames">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Digital_Printed_Frames/4.jpg">
+                        <img src="imagecategory/Digital_Printed_Frames/4.jpg" alt="">
+                    </a>
+                </div>
+            </li>
+
+  <!-- Custom Calligraphy -->
+  <li data-color="Custom_Calligraphy">
+    <div class="uk-card uk-card-default uk-card-body">
+        <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Custom_Calligraphy/1.jpg">
+            <img src="imagecategory/Custom_Calligraphy/1.jpg" alt="">
+        </a>
+    </div>
+</li>
+<li data-color="Custom_Calligraphy">
+    <div class="uk-card uk-card-default uk-card-body">
+        <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Custom_Calligraphy/2.jpg">
+            <img src="imagecategory/Custom_Calligraphy/2.jpg" alt="">
+        </a>
+    </div>
+</li>
+<li data-color="Custom_Calligraphy">
+    <div class="uk-card uk-card-default uk-card-body">
+        <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Custom_Calligraphy/3.jpg">
+            <img src="imagecategory/Custom_Calligraphy/3.jpg" alt="">
+        </a>
+    </div>
+</li>
+<li data-color="Custom_Calligraphy">
+    <div class="uk-card uk-card-default uk-card-body">
+        <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Custom_Calligraphy/4.jpg">
+            <img src="imagecategory/Custom_Calligraphy/4.jpg" alt="">
+        </a>
+    </div>
+</li>
+<li data-color="Custom_Calligraphy">
+    <div class="uk-card uk-card-default uk-card-body">
+        <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Custom_Calligraphy/5.jpg">
+            <img src="imagecategory/Custom_Calligraphy/5.jpg" alt="">
+        </a>
+    </div>
+</li>
+<li data-color="Custom_Calligraphy">
+    <div class="uk-card uk-card-default uk-card-body">
+        <a class="uk-inline uk-animation-slide-bottom-medium" href="imagecategory/Custom_Calligraphy/5.jpg">
+            <img src="imagecategory/Custom_Calligraphy/5.jpg" alt="">
+        </a>
+    </div>
+</li>
+
+        </ul>
+  
+    
+    </div>
+
+    <!--
+    <div uk-scrollspy="cls:uk-animation-fade" id="worksection" uk-grid="masonry: true" style="padding: 30px;">
         <div class="uk-card  uk-grid-collapse uk-margin" uk-grid>
             <div class="uk-card-body">
-                <h3 class="uk-card-title" style="color: #924444; font-weight: 600; text-align: center;" >Our Works</h3>
+                <h3 class="uk-card-title" style="color: #924444; font-weight: 600; text-align: center;">Gallery</h3>
                 <div class="" uk-grid uk-lightbox="animation: slide">
                     <div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true">
                         <div>
@@ -297,7 +621,9 @@
         </div>
     </div>
 
-    </div>
+    </div> 
+
+-->
 
     <!-- Work section -->
 
@@ -305,15 +631,17 @@
 
     <!-- Contact Us-->
 
-    <div uk-scrollspy="cls: uk-animation-slide-right;" id="contactussection"  style="padding: 30px;">
+    <div uk-scrollspy="cls: uk-animation-slide-right;" id="contactussection" style="padding: 30px;">
         <div class="uk-card uk-grid-collapse uk-margin" id="worksection123" uk-grid>
             <div class="uk-card-body" style="text-align: center;">
                 <h3 style="color: #924444; font-weight: 600;">Contact Us</h3>
-                <p style="text-align: justify;">You can reach out to us through our email or through one of the social
+                <p style="text-align: justify; color: #262626;">You can reach out to us through our email or through one
+                    of the social
                     media site links provided
                     below. Kindly give us 2 to 3 working days to respond to you. Thank you!</p>
-                <span uk-icon="mail" class="uk-padding-remove-left"></span>
-                gracelinjonesartistry@gmail.com <br>
+
+                <div style="color: #262626;"><span uk-icon="mail" class="uk-padding-remove-left"></span>
+                    gracelinjonesartistry@gmail.com </div>
                 <br>
                 <div class="social-icons-vertical">
                     <ul style="
